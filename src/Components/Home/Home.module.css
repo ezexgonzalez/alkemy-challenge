@@ -1,0 +1,140 @@
+
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0C1713;
+    color: white;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.logout{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 10px;
+    transition: 300ms;
+}
+
+.logout:hover{
+    color: #A04668;
+}
+
+.addRecipe{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: 300ms;
+}
+
+.addRecipe:hover{
+    color: #A04668;
+}
+
+.infoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+
+.price{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.time{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.health{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addIcon{
+    display: none;
+}
+
+.logoutIcon{
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .time{
+        font-size: 22px;
+    }
+    .health{
+        font-size: 22px;
+    }
+    .price{
+        font-size: 22px;
+    } 
+    .infoContainer{
+        margin: 20px 0;
+    }
+
+    .cards{
+        margin-top: 0;
+    }
+
+    .buttonsContainer{
+        background-color: #a04668;
+        margin-bottom: 20px;
+    }
+    .logout{
+        display: none;
+    }
+    .addRecipe{
+        display: none;
+    }   
+    .logoutIcon{
+        display: flex;
+        width: 35px;
+        height: 35px;
+        margin: 5px 15px;
+    }
+    .addIcon{
+        display: flex;
+        width: 35px;
+        height: 35px;
+        margin: 5px 0;
+    }
+
+}
